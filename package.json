@@ -1,10 +1,10 @@
 {
-  "name": "visitor-root",
+  "name": "clients-root",
   "private": true,
   "scripts": {
-    "dev": "npm run dev --prefix visitor",
+    "dev": "npm run dev --prefix clients",
     "server": "npm run start --prefix server",
-    "build": "npm run build --prefix visitor",
-    "start": "npm run start --prefix visitor"
+    "build": "npm run build --prefix clients",
+    "start": "npm run start --prefix clients"
   }
 }
