@@ -1,22 +1,25 @@
 <template>
   <section
-    class="relative min-h-[700px] lg:min-h-[850px] flex items-center justify-center text-white overflow-hidden pb-12"
+    class="relative min-h-screen flex items-center justify-center text-white overflow-hidden pb-16"
   >
     <!-- Background Image -->
     <div class="absolute inset-0 z-0">
       <img
         src="/images/hero-bg.png"
         alt="Beach Background"
-        class="w-full h-full object-cover scale-[1.02]"
+        class="w-full h-full object-cover object-center"
+        style="display: block"
       />
       <!-- Subtle dark overlay -->
       <div class="absolute inset-0 bg-black/10"></div>
     </div>
 
     <!-- Hero Content -->
-    <div class="relative z-10 w-full max-w-7xl mx-auto px-4 pt-16 text-center">
+    <div
+      class="relative z-10 w-full max-w-7xl mx-auto px-4 pt-24 sm:pt-28 text-center"
+    >
       <h1
-        class="text-5xl md:text-7xl font-bold mb-6 tracking-tight drop-shadow-xl animate-fade-in-up"
+        class="text-4xl md:text-7xl font-bold mb-6 tracking-tight drop-shadow-xl animate-fade-in-up"
       >
         Your world of joy
       </h1>
@@ -123,3 +126,7 @@
     </div>
   </section>
 </template>
+
+<script setup>
+import { MapPin, Calendar, Flag } from "lucide-vue-next";
+</script>

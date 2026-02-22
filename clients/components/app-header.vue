@@ -12,7 +12,7 @@
         <img
           src="/logo.svg"
           alt="viatours"
-          class="lg:w-[167] w-[130px] h-[32px]"
+          class="lg:w-[167px] w-[130px] h-[32px]"
         />
       </NuxtLink>
 
