@@ -125,8 +125,162 @@
       />
     </div>
   </section>
+
+  <section class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold text-[#05073C] mb-16 px-2">
+        Why choose Tourz
+      </h2>
+
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8"
+      >
+        <!-- Ultimate flexibility -->
+        <div class="flex flex-col gap-6 p-2">
+          <div class="w-14 h-14 flex items-center justify-center">
+            <img
+              src="/images/ticket.svg"
+              alt="Ultimate flexibility"
+              class="w-full h-full object-contain"
+            />
+          </div>
+          <div class="space-y-3">
+            <h3 class="text-xl text-[#05073C] tracking-tight">
+              Ultimate flexibility
+            </h3>
+            <p class="text-[#05073C] text-[15px] leading-[28px]">
+              You're in control, with free cancellation and payment options to
+              satisfy any plan or budget.
+            </p>
+          </div>
+        </div>
+
+        <!-- Memorable experiences -->
+        <div class="flex flex-col gap-6 p-2">
+          <div class="w-14 h-14 flex items-center justify-center">
+            <img
+              src="/images/air_balloon.svg"
+              alt="Memorable experiences"
+              class="w-full h-full object-contain"
+            />
+          </div>
+          <div class="space-y-3">
+            <h3 class="text-xl text-[#05073C] tracking-tight">
+              Memorable experiences
+            </h3>
+            <p class="text-[#05073C] text-[15px] leading-[28px]">
+              Browse and book tours and activities so incredible, you'll want to
+              tell your friends.
+            </p>
+          </div>
+        </div>
+
+        <!-- Quality at our core -->
+        <div class="flex flex-col gap-6 p-2">
+          <div class="w-14 h-14 flex items-center justify-center">
+            <img
+              src="/images/diamond.svg"
+              alt="Quality at our core"
+              class="w-full h-full object-contain"
+            />
+          </div>
+          <div class="space-y-3">
+            <h3 class="text-xl text-[#05073C] tracking-tight">
+              Quality at our core
+            </h3>
+            <p class="text-[#05073C] text-[15px] leading-[28px]">
+              High-quality standards. Millions of reviews. A tourz company.
+            </p>
+          </div>
+        </div>
+
+        <!-- Award-winning support -->
+        <div class="flex flex-col gap-6 p-2">
+          <div class="w-14 h-14 flex items-center justify-center">
+            <img
+              src="/images/medal.svg"
+              alt="Award-winning support"
+              class="w-full h-full object-contain"
+            />
+          </div>
+          <div class="space-y-3">
+            <h3 class="text-xl text-[#05073C] tracking-tight">
+              Award-winning support
+            </h3>
+            <p class="text-[#05073C] text-[15px] leading-[28px]">
+              New price? New plan? No problem. We're here to help, 24/7.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Trending Destinations -->
+    <div class="py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold text-[#05073C] mb-16 px-2">
+            Trending destinations
+          </h2>
+          <a
+            href="#"
+            class="text-sm font-medium text-gray-500 hover:text-[#EB662D] transition-colors"
+            >See all</a
+          >
+        </div>
+
+        <div
+          class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-6 md:gap-4"
+        >
+          <div
+            v-for="destination in destinations"
+            :key="destination.id"
+            class="flex flex-col items-center group cursor-pointer"
+          >
+            <div
+              class="relative w-full aspect-square mb-4 overflow-hidden rounded-full"
+            >
+              <img
+                :src="destination.image"
+                :alt="destination.name"
+                class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+            </div>
+            <div class="text-center">
+              <h3
+                class="text-base font-[500] text-[#05073C] mb-1 leading-tight"
+              >
+                {{ destination.name }}
+              </h3>
+              <p class="text-[13px] text-gray-500 font-medium">
+                {{ destination.tours }}
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pagination Dots -->
+        <div class="flex justify-center items-center gap-2 mt-12">
+          <button class="w-8 h-1.5 bg-[#05073C] rounded-full"></button>
+          <button
+            class="w-1.5 h-1.5 bg-gray-300 rounded-full hover:bg-gray-400 transition-colors"
+          ></button>
+          <button
+            class="w-1.5 h-1.5 bg-gray-300 rounded-full hover:bg-gray-400 transition-colors"
+          ></button>
+          <button
+            class="w-1.5 h-1.5 bg-gray-300 rounded-full hover:bg-gray-400 transition-colors"
+          ></button>
+          <button
+            class="w-1.5 h-1.5 bg-gray-300 rounded-full hover:bg-gray-400 transition-colors"
+          ></button>
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
 
 <script setup>
 import { MapPin, Calendar, Flag } from "lucide-vue-next";
+import destinations from "~/public/data/destinations.json";
 </script>
