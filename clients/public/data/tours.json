@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "image": "/tourimage/Card_image.png",
+    "location": "Paris, France",
+    "title": "Centipede Tour - Guided Arizona Desert Tour by ATV",
+    "rating": 4.8,
+    "reviews": 243,
+    "duration": "4 days",
+    "price": 189.25
+  },
+  {
+    "id": 2,
+    "image": "/tourimage/Card_image1.png",
+    "location": "New York, USA",
+    "title": "Molokini and Turtle Town Snorkeling Adventure Aboard",
+    "rating": 4.8,
+    "reviews": 243,
+    "duration": "4 days",
+    "price": 225.0
+  },
+  {
+    "id": 3,
+    "image": "/tourimage/Card_image2.png",
+    "location": "London, UK",
+    "title": "Westminster Walking Tour & Westminster Abbey Entry",
+    "rating": 4.8,
+    "reviews": 243,
+    "duration": "4 days",
+    "price": 943.0
+  },
+  {
+    "id": 4,
+    "image": "/tourimage/Card_image3.png",
+    "location": "New York, USA",
+    "title": "All Inclusive Ultimate Circle Island Day Tour with Lunch",
+    "rating": 4.8,
+    "reviews": 243,
+    "duration": "4 days",
+    "price": 771.0
+  },
+  {
+    "id": 5,
+    "image": "/tourimage/Card_image4.png",
+    "location": "Paris, France",
+    "title": "Space Center Houston Admission Ticket",
+    "rating": 4.8,
+    "reviews": 243,
+    "duration": "4 days",
+    "price": 189.25
+  },
+  {
+    "id": 6,
+    "image": "/tourimage/Card_image5.png",
+    "location": "New York, USA",
+    "title": "Clear Kayak Tour of Shell Key Preserve and Tampa Bay Area",
+    "rating": 4.8,
+    "reviews": 243,
+    "duration": "4 days",
+    "price": 225.0
+  },
+  {
+    "id": 7,
+    "image": "/tourimage/Card_image6.png",
+    "location": "London, UK",
+    "title": "History and Hauntings of Salem Guided Walking Tour",
+    "rating": 4.8,
+    "reviews": 243,
+    "duration": "4 days",
+    "price": 943.0
+  },
+  {
+    "id": 8,
+    "image": "/tourimage/Card_image7.png",
+    "location": "New York, USA",
+    "title": "Mauna Kea Summit Sunset and Stars Free Astro Photos Hilo Kona Waikoloa Pick Up",
+    "rating": 4.8,
+    "reviews": 243,
+    "duration": "4 days",
+    "price": 771.0
+  }
+]

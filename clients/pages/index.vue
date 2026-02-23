@@ -127,7 +127,7 @@
   </section>
 
   <section class="py-24 bg-white">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
       <h2 class="text-3xl md:text-4xl font-bold text-[#05073C] mb-16 px-2">
         Why choose Tourz
       </h2>
@@ -215,6 +215,82 @@
       </div>
     </div>
 
+    <!-- Popular Tours Section -->
+    <div class="py-24 bg-[#F5F5F7]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between mb-12 px-2">
+          <h2 class="text-3xl md:text-4xl font-bold text-[#05073C]">
+            Find Popular Tours
+          </h2>
+          <a
+            href="#"
+            class="text-sm font-medium text-gray-500 hover:text-[#EB662D] transition-colors"
+            >See all</a
+          >
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div
+            v-for="tour in tours"
+            :key="tour.id"
+            class="bg-white rounded-2xl overflow-hidden shadow-sm cursor-pointer border border-gray-100"
+          >
+            <!-- Image Container -->
+            <div class="relative aspect-[4/3] overflow-hidden">
+              <img
+                :src="tour.image"
+                :alt="tour.title"
+                class="w-full h-full object-cover"
+              />
+              <button
+                class="absolute bottom-3 right-3 w-8 h-8 bg-white rounded-full shadow-sm flex items-center justify-center text-gray-400 hover:text-[#EB662D] transition-colors"
+              >
+                <Heart class="w-4 h-4" />
+              </button>
+            </div>
+
+            <!-- Content -->
+            <div class="p-5 space-y-2">
+              <p class="text-[12px] font-medium text-gray-400">
+                {{ tour.location }}
+              </p>
+              <h3
+                class="text-[17px] font-[500] text-[#05073C] leading-tight line-clamp-2 min-h-[3rem]"
+              >
+                {{ tour.title }}
+              </h3>
+
+              <div class="flex items-center gap-1.5 pb-2">
+                <div class="flex items-center gap-0.5">
+                  <Star class="w-3.5 h-3.5 text-[#EB662D] fill-[#EB662D]" />
+                </div>
+                <span class="text-sm font-[500] text-[#05073C]">{{
+                  tour.rating
+                }}</span>
+                <span class="text-sm text-gray-400">({{ tour.reviews }})</span>
+              </div>
+
+              <div
+                class="flex items-center justify-between pt-4 border-t border-gray-100"
+              >
+                <div class="flex items-center gap-1.5 text-gray-500">
+                  <span class="text-[13px] font-medium">{{
+                    tour.duration
+                  }}</span>
+                </div>
+                <div class="flex items-center gap-1">
+                  <p class="text-[13px] text-gray-400">From</p>
+                  <p class="text-[16px] font-[500] text-[#05073C]">
+                    ${{ tour.price }}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Trending Destinations -->
     <div class="py-24 bg-white">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -281,6 +357,7 @@
 </template>
 
 <script setup>
-import { MapPin, Calendar, Flag } from "lucide-vue-next";
+import { MapPin, Calendar, Flag, Star, Clock, Heart } from "lucide-vue-next";
 import destinations from "~/public/data/destinations.json";
+import tours from "~/public/data/tours.json";
 </script>
