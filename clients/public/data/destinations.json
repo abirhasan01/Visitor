@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Paris",
+    "image": "/photos/image1.png",
+    "tours": "100+ Tours"
+  },
+  {
+    "id": 2,
+    "name": "Singapore",
+    "image": "/photos/image2.png",
+    "tours": "300+ Tours"
+  },
+  {
+    "id": 3,
+    "name": "Roma",
+    "image": "/photos/image3.png",
+    "tours": "400+ Tours"
+  },
+  {
+    "id": 4,
+    "name": "Bangkok",
+    "image": "/photos/image4.png",
+    "tours": "100+ Tours"
+  },
+  {
+    "id": 5,
+    "name": "Bali",
+    "image": "/photos/image5.png",
+    "tours": "600+ Tours"
+  },
+  {
+    "id": 6,
+    "name": "Phuket",
+    "image": "/photos/image6.png",
+    "tours": "200+ Tours"
+  },
+  {
+    "id": 7,
+    "name": "Tokyo",
+    "image": "/photos/image7.png",
+    "tours": "700+ Tours"
+  },
+  {
+    "id": 8,
+    "name": "Cappadocia",
+    "image": "/photos/image8.png",
+    "tours": "900+ Tours"
+  }
+]
