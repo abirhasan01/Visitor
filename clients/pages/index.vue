@@ -354,6 +354,64 @@
       </div>
     </div>
   </section>
+
+  <section class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div
+        class="relative overflow-hidden rounded-[24px] flex flex-col md:flex-row"
+      >
+        <!-- Background Topographical Pattern -->
+        <div class="absolute inset-0 z-0">
+          <img
+            src="/images/bag_image.png"
+            alt="Pattern"
+            class="w-full h-full object-cover"
+          />
+        </div>
+
+        <!-- Left Content -->
+        <div
+          class="relative z-10 flex-[1] px-8 py-16 md:px-20 flex flex-col justify-center"
+        >
+          <div class="max-w-md">
+            <h2
+              class="text-[32px] md:text-[48px] font-bold text-[#05073C] leading-[1.15] mb-4"
+            >
+              Grab up to <span class="text-[#EB662D]">35% off</span> <br />
+              on your favorite <br />
+              Destination
+            </h2>
+            <p
+              class="text-[#05073C]/60 text-base md:text-[17px] mb-10 font-medium"
+            >
+              Limited time offer, don't miss the opportunity
+            </p>
+            <button
+              class="inline-flex bg-[#EB662D] hover:bg-[#d45520] text-white px-10 py-4 rounded-[14px] font-bold transition-all duration-300 shadow-[0_10px_25px_rgba(235,102,45,0.25)] hover:shadow-[0_15px_30px_rgba(235,102,45,0.35)] transform active:scale-95"
+            >
+              Book Now
+            </button>
+          </div>
+        </div>
+
+        <!-- Right Side with Image & Wavy Shape -->
+        <div class="relative flex-[1] min-h-[400px] md:min-h-[520px]">
+          <!-- Wavy Shape -->
+          <img
+            src="/images/shape.png"
+            alt="divider"
+            class="absolute top-0 bottom-0 left-0 h-full z-20 -translate-x-1/2 md:-translate-x-[15%] pointer-events-none select-none"
+          />
+          <!-- Destination Image -->
+          <img
+            src="/images/imageD.png"
+            alt="Destination"
+            class="absolute inset-0 w-full h-full object-cover z-10"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
 
 <script setup>
